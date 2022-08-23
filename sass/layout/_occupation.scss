@@ -1,0 +1,36 @@
+.occupation__head {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.occupation__list {
+  display: flex;
+  column-gap: 30px;
+  position: relative;
+}
+.occupation__discription {
+  position: absolute;
+  width: 370px;
+  background: rgba(47, 48, 58, 0.8);
+  height: 70px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+}
+.occupation__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffff;
+}
+.occupation__item {
+  list-style-type: none;
+}
