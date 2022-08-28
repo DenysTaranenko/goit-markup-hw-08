@@ -1,24 +1,41 @@
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .clients__head {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   text-align: center;
+  font-size: 28px;
+  line-height: 33px;
+  @include desktop {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  column-gap: 30px;
+  gap: 30px;
   list-style-type: none;
 }
 .clients__link {
   border: 1px solid #afb1b8;
   color: #afb1b8;
   border-radius: 4px;
+  display: flex;
   width: 170px;
   height: 92px;
-  display: flex;
   align-items: center;
   justify-content: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -27,6 +44,15 @@
   &:focus {
     color: #2196f3;
     border-color: #2196f3;
+  }
+  .clients__item {
+    width: 100%;
+    @include tablet {
+      width: calc((100% - 30px) / 2);
+    }
+    @include desktop {
+      width: calc((100% - 90px) / 4);
+    }
   }
 }
 .clients__icon {

@@ -1,5 +1,15 @@
 .team {
   background-color: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .team__head {
   font-weight: 700;
@@ -11,7 +21,8 @@
 }
 .team__list {
   display: flex;
-  column-gap: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .team__item {
   list-style-type: none;
@@ -20,4 +31,11 @@
   border-radius: 0px 0px 4px 4px;
   text-align: center;
   background-color: #fff;
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+  }
 }
