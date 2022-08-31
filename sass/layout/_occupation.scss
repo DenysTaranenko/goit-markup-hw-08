@@ -1,4 +1,9 @@
-.occupation__head {
+.occupation{
+  display: none;
+    @include desktop {
+        display: block;
+      }
+} .occupation__head {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;

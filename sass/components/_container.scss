@@ -22,15 +22,14 @@
   text-align: center;
 }
 .footer-container {
-  display: flex;
-  align-items: baseline;
-  position: relative;
-  @include mobile {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
+  text-align: center;
   @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
   }
   @include desktop {
   }
 }
+
