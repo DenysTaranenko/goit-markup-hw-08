@@ -80,7 +80,10 @@
   fill: #ffff;
 }
 .footer-con-block {
-  margin-left: 70px;
-  width: 206px;
+  width: 100%;
   height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
 }

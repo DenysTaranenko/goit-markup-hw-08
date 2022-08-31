@@ -1,10 +1,6 @@
 .clients {
   padding-top: 60px;
   padding-bottom: 60px;
-  @include mobile {
-  }
-  @include tablet {
-  }
   @include desktop {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -34,7 +30,7 @@
   color: #afb1b8;
   border-radius: 4px;
   display: flex;
-  width: 170px;
+  width: 210px;
   height: 92px;
   align-items: center;
   justify-content: center;
@@ -45,14 +41,23 @@
     color: #2196f3;
     border-color: #2196f3;
   }
-  .clients__item {
-    width: 100%;
-    @include tablet {
-      width: calc((100% - 30px) / 2);
-    }
-    @include desktop {
-      width: calc((100% - 90px) / 4);
-    }
+  @include tablet {
+    width: 226px;
+  }
+  @include desktop {
+    width: 170px;
+  }
+}
+.clients__item {
+  width: 100%;
+  @include mobile {
+    width: calc((100% - 60px) / 2);
+  }
+  @include tablet {
+    width: calc((100% - 90px) / 3);
+  }
+  @include desktop {
+    width: calc((100% - 180px) / 6);
   }
 }
 .clients__icon {
