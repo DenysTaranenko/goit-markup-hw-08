@@ -35,14 +35,29 @@ img {
 .modal {
   background-color: #ffffff;
   border-radius: 4px;
-  width: 528px;
-  height: 581px;
+  width: calc(100% - 30px);
+  height: 609px;
   position: absolute;
   top: 50%;
   left: 50%;
   padding: 40px;
   transform: translate(-50%, -50%);
   transition: transform 300ms linear;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal-close {
@@ -155,12 +170,22 @@ img {
 
 .modal-link {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: #2196f3;
   padding-left: 4px;
+}
+@media screen and (min-width: 480px) {
+  .modal-link {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-check {
@@ -190,16 +215,26 @@ img {
 
 .check-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
   color: #757575;
   margin-left: 7px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .check-text {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
 }
 
 .check-icon {
@@ -218,6 +253,30 @@ img {
 .modal-check:checked + .check-text .check-icon {
   fill: #ffffff;
   opacity: 1;
+}
+
+.mobile-menu {
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: transform 300ms linear;
+}
+
+.menu-close {
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background-color: #ffffff;
+}
+.menu-close:hover, .menu-close:focus {
+  cursor: pointer;
 }
 
 .container {
@@ -461,7 +520,8 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
-  margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .logo__help {
@@ -529,8 +589,20 @@ body {
 }
 
 .navigation__list {
-  display: flex;
+  display: none;
   column-gap: 50px;
+}
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    display: flex;
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation__list {
+    display: flex;
+    margin-left: 93px;
+  }
 }
 
 .icon {
@@ -561,11 +633,23 @@ body {
 }
 
 .contacts {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  margin-left: auto;
-  column-gap: 50px;
+  display: none;
+  gap: 10px;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: auto;
+  }
 }
 
 .link {
@@ -620,6 +704,40 @@ body {
   color: var(--hover-link-color);
 }
 
+.menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  position: relative;
+  fill: #000000;
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-icon {
+  fill: currentColor;
+  position: absolute;
+}
+
+.menu-link:hover {
+  fill: #2196f3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .soft {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -635,15 +753,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-}
-
-.soft__photo {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: var(--portfolio-btn-color);
 }
 
 .soft__item {
@@ -931,6 +1040,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
+  justify-content: start;
 }
 
 .projects-item {
@@ -955,11 +1065,11 @@ body {
   text-decoration: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   height: 100%;
-  display: flex;
+  display: block;
   flex-direction: column;
+  display: flex;
 }
 .projects-link:hover, .projects-link:focus {
-  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
