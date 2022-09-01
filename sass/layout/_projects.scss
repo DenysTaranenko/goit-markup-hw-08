@@ -16,6 +16,9 @@
   @include desktop {
     justify-content: center;
   }
+  @include tablet {
+    justify-content: center;
+  }
 }
 .portfolio-nav-item {
   list-style-type: none;
