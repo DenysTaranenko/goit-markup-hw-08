@@ -25,7 +25,8 @@
       <div class="container container__header">
         <a href="./index.html" class="logo"
           >Web<span class="logo__help">Studio</span></a
-        > <button type="button" class="mobile-menu-open">
+        >
+        <button type="button" class="mobile-menu-open">
           <svg class="mobile-menu__icon" width="24px" height="16px">
             <use href="./img/icons.svg#icon-menu"></use>
           </svg>
@@ -41,13 +42,11 @@
               <nav class="menu-nav">
                 <ul class="menu-nav__list">
                   <li class="menu-nav__item">
-                    <a href="./index.html" class="menu-nav__link"
-                      ><span class="menu__link-color">Студия</span></a
-                    >
+                    <a href="./index.html" class="menu-nav__link">Студия</a>
                   </li>
                   <li class="menu-nav__item">
                     <a href="./portfolio.html" class="menu-nav__link"
-                      >Портфолио</a
+                      ><span class="menu__link-color">Портфолио</span></a
                     >
                   </li>
                   <li class="menu-nav__item">
@@ -123,7 +122,7 @@
           </li>
         </ul>
       </div>
-    </header> 
+    </header>
     <main>
       <section class="portfolio-nav section">
         <div class="container portf-container">
@@ -146,221 +145,375 @@
               <button class="portfolio-nav-btn" type="button">Маркетинг</button>
             </li>
           </ul>
-            <ul class="projects-list">
-              <li class="projects-item">
-                <a href="" class="projects-link">
-                  <div class="projects-text-hover">
-              <picture>
-                <source srcset="./img/studio-project1.jpg 1x, ./img/studio-project1-2x.jpg 2x" media="(min-width:1200px)">
-                <source srcset="./img/studio-project1-tab.jpg 1x, ./img/studio-project1-tab-2x.jpg 2x" media="(min-width:768px)">
-                <source srcset="./img/studio-project1-mob.jpg 1x, ./img/studio-project1-mob-2x.jpg 2x" media="(max-width:767px)">
-                <img
+          <ul class="projects-list">
+            <li class="projects-item">
+              <a href="" class="projects-link">
+                <div class="projects-text-hover">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/studio-project1.jpg    1x,
+                        ./img/studio-project1-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio-project1-tab.jpg    1x,
+                        ./img/studio-project1-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio-project1-mob.jpg    1x,
+                        ./img/studio-project1-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
                       src="./img/studio-project1.jpg"
                       alt="Проэкты и компании"
                     />
-              </picture>
-                    <p class="work-discr">
-                      Ресурс предлагает комплексные предложения с разным уровнем
-                      функционала и сервисов. Все это позволит посетителю
-                      получить исчерпывающие сведения о компании или частном
-                      лице.
-                    </p>
-                  </div>
-                  <div class="projects-bord">
-                    <h3 class="projects-name">Технокряк</h3>
-                    <p class="projects-discrip">Веб-сайт</p>
-                  </div></a
-                >
-              </li>
-              <li class="projects-item">
-                <a href="" class="projects-link"
-                  ><div class="projects-text-hover">
-                <picture>
-                <source srcset="./img/studio-project2.jpg 1x, ./img/studio-project2-2x.jpg 2x" media="(min-width:1200px)">
-                <source srcset="./img/studio-project2-tab.jpg 1x, ./img/studio-project2-tab-2x.jpg 2x" media="(min-width:768px)">
-                <source srcset="./img/studio-project2-mob.jpg 1x, ./img/studio-project2-mob-2x.jpg 2x" media="(max-width:767px)">
-                <img
+                  </picture>
+                  <p class="work-discr">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="projects-bord">
+                  <h3 class="projects-name">Технокряк</h3>
+                  <p class="projects-discrip">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="projects-item">
+              <a href="" class="projects-link"
+                ><div class="projects-text-hover">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/studio-project2.jpg    1x,
+                        ./img/studio-project2-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio-project2-tab.jpg    1x,
+                        ./img/studio-project2-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio-project2-mob.jpg    1x,
+                        ./img/studio-project2-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
                       src="./img/studio-project2.jpg"
                       alt="Проэкты и компании"
                     />
-              </picture>
-                    <p class="work-discr">
-                      Ресурс предлагает комплексные предложения с разным уровнем
-                      функционала и сервисов. Все это позволит посетителю
-                      получить исчерпывающие сведения о компании или частном
-                      лице.
-                    </p>
-                  </div>
-                  <div class="projects-bord">
-                    <h3 class="projects-name">
-                      Постер New Orlean vs Golden Star
-                    </h3>
-                    <p class="projects-discrip">Дизайн</p>
-                  </div></a
-                >
-              </li>
-              <li class="projects-item">
-                <a href="" class="projects-link">
-                  <div class="projects-text-hover">
-                      <picture>
-                <source srcset="./img/studio-project3.jpg 1x, ./img/studio-project3-2x.jpg 2x" media="(min-width:1200px)">
-                <source srcset="./img/studio-project3-tab.jpg 1x, ./img/studio-project3-tab-2x.jpg 2x" media="(min-width:768px)">
-                <source srcset="./img/studio-project3-mob.jpg 1x, ./img/studio-project3-mob-2x.jpg 2x" media="(max-width:767px)">
-                <img
+                  </picture>
+                  <p class="work-discr">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="projects-bord">
+                  <h3 class="projects-name">
+                    Постер New Orlean vs Golden Star
+                  </h3>
+                  <p class="projects-discrip">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="projects-item">
+              <a href="" class="projects-link">
+                <div class="projects-text-hover">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/studio-project3.jpg    1x,
+                        ./img/studio-project3-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio-project3-tab.jpg    1x,
+                        ./img/studio-project3-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio-project3-mob.jpg    1x,
+                        ./img/studio-project3-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
                       src="./img/studio-project3.jpg"
                       alt="Проэкты и компании"
                     />
-              </picture>
-                    <p class="work-discr">
-                      Ресурс предлагает комплексные предложения с разным уровнем
-                      функционала и сервисов. Все это позволит посетителю
-                      получить исчерпывающие сведения о компании или частном
-                      лице.
-                    </p>
-                  </div>
-                  <div class="projects-bord">
-                    <h3 class="projects-name">Ресторан Seafood</h3>
-                    <p class="projects-discrip">Приложение</p>
-                  </div>
-                </a>
-              </li>
-              <li class="projects-item">
-                <a href="" class="projects-link">
-                  <div class="projects-text-hover">
+                  </picture>
+                  <p class="work-discr">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="projects-bord">
+                  <h3 class="projects-name">Ресторан Seafood</h3>
+                  <p class="projects-discrip">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-item">
+              <a href="" class="projects-link">
+                <div class="projects-text-hover">
                   <picture>
-                <source srcset="./img/studio-project4.jpg 1x, ./img/studio-project4-2x.jpg 2x" media="(min-width:1200px)">
-                <source srcset="./img/studio-project4-tab.jpg 1x, ./img/studio-project4-tab-2x.jpg 2x" media="(min-width:768px)">
-                <source srcset="./img/studio-project4-mob.jpg 1x, ./img/studio-project4-mob-2x.jpg 2x" media="(max-width:767px)">
-                <img
+                    <source
+                      srcset="
+                        ./img/studio-project4.jpg    1x,
+                        ./img/studio-project4-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio-project4-tab.jpg    1x,
+                        ./img/studio-project4-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio-project4-mob.jpg    1x,
+                        ./img/studio-project4-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
                       src="./img/studio-project4.jpg"
                       alt="Проэкты и компании"
                     />
                   </picture>
-                    <p class="work-discr">
-                      Ресурс предлагает комплексные предложения с разным уровнем
-                      функционала и сервисов. Все это позволит посетителю
-                      получить исчерпывающие сведения о компании или частном
-                      лице.
-                    </p>
-                  </div>
-                  <div class="projects-bord">
-                    <h3 class="projects-name">Проект Prime</h3>
-                    <p class="projects-discrip">Маркетинг</p>
-                  </div>
-                </a>
-              </li>
-              <li class="projects-item">
-                <a href="" class="projects-link">
-                  <div class="projects-text-hover">
-                      <picture>
-                <source srcset="./img/studio-project5.jpg 1x, ./img/studio-project5-2x.jpg 2x" media="(min-width:1200px)">
-                <source srcset="./img/studio-project5-tab.jpg 1x, ./img/studio-project5-tab-2x.jpg 2x" media="(min-width:768px)">
-                <source srcset="./img/studio-project5-mob.jpg 1x, ./img/studio-project5-mob-2x.jpg 2x" media="(max-width:767px)">
-                <img
-                      src="./img/studio-project5.jpg""
+                  <p class="work-discr">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="projects-bord">
+                  <h3 class="projects-name">Проект Prime</h3>
+                  <p class="projects-discrip">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-item">
+              <a href="" class="projects-link">
+                <div class="projects-text-hover">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/studio-project5.jpg    1x,
+                        ./img/studio-project5-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio-project5-tab.jpg    1x,
+                        ./img/studio-project5-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio-project5-mob.jpg    1x,
+                        ./img/studio-project5-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/studio-project5.jpg"
                       alt="Проэкты и компании"
                     />
-                    </picture>
-                    <p class="work-discr">
-                      Ресурс предлагает комплексные предложения с разным уровнем
-                      функционала и сервисов. Все это позволит посетителю
-                      получить исчерпывающие сведения о компании или частном
-                      лице.
-                    </p>
-                  </div>
-                  <div class="projects-bord">
-                    <h3 class="projects-name">Проект Boxes</h3>
-                    <p class="projects-discrip">Приложение</p>
-                  </div>
-                </a>
-              </li>
-              <li class="projects-item">
-                <a href="" class="projects-link">
-                  <div class="projects-text-hover">
-                      <picture>
-                <source srcset="./img/studio-project6.jpg 1x, ./img/studio-project6-2x.jpg 2x" media="(min-width:1200px)">
-                <source srcset="./img/studio-project6-tab.jpg 1x, ./img/studio-project6-tab-2x.jpg 2x" media="(min-width:768px)">
-                <source srcset="./img/studio-project6-mob.jpg 1x, ./img/studio-project6-mob-2x.jpg 2x" media="(max-width:767px)">
-                <img
+                  </picture>
+                  <p class="work-discr">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="projects-bord">
+                  <h3 class="projects-name">Проект Boxes</h3>
+                  <p class="projects-discrip">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-item">
+              <a href="" class="projects-link">
+                <div class="projects-text-hover">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/studio-project6.jpg    1x,
+                        ./img/studio-project6-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio-project6-tab.jpg    1x,
+                        ./img/studio-project6-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio-project6-mob.jpg    1x,
+                        ./img/studio-project6-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
                       src="./img/studio-project6.jpg"
                       alt="Проэкты и компании"
                     />
-                      </picture>
-                    <p class="work-discr">
-                      Ресурс предлагает комплексные предложения с разным уровнем
-                      функционала и сервисов. Все это позволит посетителю
-                      получить исчерпывающие сведения о компании или частном
-                      лице.
-                    </p>
-                  </div>
-                  <div class="projects-bord">
-                    <h3 class="projects-name">Inspiration has no Borders</h3>
-                    <p class="projects-discrip">Веб-сайт</p>
-                  </div>
-                </a>
-              </li>
-              <li class="projects-item">
-                <a href="" class="projects-link">
-                  <div class="projects-text-hover">
-                      <picture>
-                <source srcset="./img/studio-project7.jpg 1x, ./img/studio-project7-2x.jpg 2x" media="(min-width:1200px)">
-                <source srcset="./img/studio-project7-tab.jpg 1x, ./img/studio-project7-tab-2x.jpg 2x" media="(min-width:768px)">
-                <source srcset="./img/studio-project7-mob.jpg 1x, ./img/studio-project7-mob-2x.jpg 2x" media="(max-width:767px)">
-                <img
+                  </picture>
+                  <p class="work-discr">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="projects-bord">
+                  <h3 class="projects-name">Inspiration has no Borders</h3>
+                  <p class="projects-discrip">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-item">
+              <a href="" class="projects-link">
+                <div class="projects-text-hover">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/studio-project7.jpg    1x,
+                        ./img/studio-project7-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio-project7-tab.jpg    1x,
+                        ./img/studio-project7-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio-project7-mob.jpg    1x,
+                        ./img/studio-project7-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
                       src="./img/studio-project7.jpg"
                       alt="Проэкты и компании"
                     />
-                      </picture>
-                    <p class="work-discr">
-                      Ресурс предлагает комплексные предложения с разным уровнем
-                      функционала и сервисов. Все это позволит посетителю
-                      получить исчерпывающие сведения о компании или частном
-                      лице.
-                    </p>
-                  </div>
-                  <div class="projects-bord">
-                    <h3 class="projects-name">Издание Limited Edition</h3>
-                    <p class="projects-discrip">Дизайн</p>
-                  </div>
-                </a>
-              </li>
-              <li class="projects-item">
-                <a href="" class="projects-link">
-                  <div class="projects-text-hover">
-                      <picture>
-                <source srcset="./img/studio-project8.jpg 1x, ./img/studio-project8-2x.jpg 2x" media="(min-width:1200px)">
-                <source srcset="./img/studio-project8-tab.jpg 1x, ./img/studio-project8-tab-2x.jpg 2x" media="(min-width:768px)">
-                <source srcset="./img/studio-project8-mob.jpg 1x, ./img/studio-project8-mob-2x.jpg 2x" media="(max-width:767px)">
-                <img
+                  </picture>
+                  <p class="work-discr">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="projects-bord">
+                  <h3 class="projects-name">Издание Limited Edition</h3>
+                  <p class="projects-discrip">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-item">
+              <a href="" class="projects-link">
+                <div class="projects-text-hover">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/studio-project8.jpg    1x,
+                        ./img/studio-project8-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio-project8-tab.jpg    1x,
+                        ./img/studio-project8-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio-project8-mob.jpg    1x,
+                        ./img/studio-project8-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
                       src="./img/studio-project8.jpg"
                       alt="Проэкты и компании"
                     />
-                      </picture>
-                    <p class="work-discr">
-                      Ресурс предлагает комплексные предложения с разным уровнем
-                      функционала и сервисов. Все это позволит посетителю
-                      получить исчерпывающие сведения о компании или частном
-                      лице.
-                    </p>
-                  </div>
-                  <div class="projects-bord">
-                    <h3 class="projects-name">Проект LAB</h3>
-                    <p class="projects-discrip">Маркетинг</p>
-                  </div>
-                </a>
-              </li>
-              <li class="projects-item">
-                <a href="" class="projects-link">
+                  </picture>
+                  <p class="work-discr">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="projects-bord">
+                  <h3 class="projects-name">Проект LAB</h3>
+                  <p class="projects-discrip">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-item">
+              <a href="" class="projects-link">
                 <div class="projects-text-hover">
-                    <picture>
-                <source srcset="./img/studio-project9.jpg 1x, ./img/studio-project9-2x.jpg 2x" media="(min-width:1200px)">
-                <source srcset="./img/studio-project9-tab.jpg 1x, ./img/studio-project9-tab-2x.jpg 2x" media="(min-width:768px)">
-                <source srcset="./img/studio-project9-mob.jpg 1x, ./img/studio-project9-mob-2x.jpg 2x" media="(max-width:767px)">
-                <img
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/studio-project9.jpg    1x,
+                        ./img/studio-project9-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio-project9-tab.jpg    1x,
+                        ./img/studio-project9-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio-project9-mob.jpg    1x,
+                        ./img/studio-project9-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
                       src="./img/studio-project9.jpg"
                       alt="Проэкты и компании"
                     />
-                    </picture>
+                  </picture>
                   <p class="work-discr">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -372,9 +525,8 @@
                   <p class="projects-discrip">Приложение</p>
                 </div>
               </a>
-              </li>
-            </ul>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>

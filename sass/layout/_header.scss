@@ -167,7 +167,7 @@
   &.is-hidden {
     transform: translate(-50%, -50%) scale(0);
   }
-  > .container {
+    .container {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -206,6 +206,9 @@
   letter-spacing: 0.02em;
   color: #2196f3;
   text-decoration: none;
+  @media screen and (max-width: 320px){
+    font-size: 33px;
+  }
 }
 
 .menu-contact-list__mail {
@@ -230,6 +233,9 @@
   letter-spacing: 0.02em;
   color: #2196f3;
   text-decoration: none;
+    @media screen and (max-width: 320px) {
+        font-size: 13px;
+      }
 }
 .menu-social-item {
   padding-right: 10px;
@@ -239,7 +245,7 @@
   }
 }
 .menu__link-color {
-  color: var(--first-text-color);
+  color: var(--hover-link-color);
 }
 .menu-close {
   fill: currentColor;
